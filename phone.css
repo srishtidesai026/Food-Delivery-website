@@ -1,0 +1,23 @@
+#home {
+    height: 200px;
+}
+
+#navbar {
+    flex-direction: column;
+}
+
+#services {
+    flex-direction: column;
+}
+
+#clients {
+    overflow: hidden;
+}
+
+#contact {
+    flex-wrap: wrap;
+}
+
+#contact.form {
+    width: 80%;
+}

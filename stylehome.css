@@ -1,0 +1,400 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Navigation Bar */
+
+#logo img {
+    height: 60px;
+    width: 80px;
+    margin: 10px 5px;
+    padding: 10px 5px;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+#navbar ul li {
+    padding: 5px 15px;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    color: azure;
+    transition-property: background-color, font-weight;
+    transition-duration: 0.8s;
+}
+
+#navbar ul li a:hover {
+    background-color: dimgray;
+    border-radius: 20px;
+    padding: 7px;
+    font-weight: bold;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    /* Keep this higher than the ::before background */
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    /* Ensure this stays behind the content */
+    opacity: 0.5;
+    pointer-events: none;
+    /* Prevent background from blocking interactions */
+}
+
+
+/* Home Section */
+
+#home {
+    font-family: "Playfair Display", serif;
+    color: azure;
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 330px;
+    padding: 50px 200px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#home::before {
+    content: "";
+    background: url("../WebDevImgs/bg1.jpg") no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.77;
+}
+
+#homeheading {
+    font-family: "Playfair Display", serif;
+    color: azure;
+    font-size: 2rem;
+    padding: 130px 20px 30px;
+    text-align: center;
+}
+
+.button {
+    margin: 50px 10px 10px 10px;
+    padding: 15px 30px;
+    background-color: rgb(211, 66, 26);
+    color: azure;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    border: 3px solid white;
+    border-radius: 8px;
+}
+
+.button:hover {
+    background-color: rgb(182, 43, 4);
+    cursor: pointer;
+}
+
+
+/* Services Section*/
+
+#services-container {
+    margin: 40px 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+#services {
+    display: flex;
+}
+
+#sectionheading {
+    font-family: "Playfair Display", serif;
+    color: rgb(12, 12, 12);
+    font-size: 2rem;
+    padding: 20px 20px 30px;
+    text-align: center;
+}
+
+#services .box1 {
+    border: 3px solid rgb(169, 27, 27);
+    border-radius: 18px;
+    height: 270px;
+    width: 430px;
+    margin: 10px 13px;
+    padding: 15px 10px;
+    font-family: "Playfair Display", serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(242, 237, 229);
+}
+
+#services .box1 img {
+    height: 150px;
+    width: 160px;
+    padding: 20px 10px;
+}
+
+#services .box2 {
+    border: 3px solid rgb(169, 27, 27);
+    border-radius: 18px;
+    height: 270px;
+    width: 430px;
+    margin: 10px 13px;
+    padding: 15px 10px;
+    font-family: "Playfair Display", serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(242, 237, 229);
+}
+
+#services .box2 img {
+    height: 180px;
+    width: 180px;
+    padding: 4px 10px;
+}
+
+#services .box3 {
+    border: 3px solid rgb(169, 27, 27);
+    border-radius: 18px;
+    height: 270px;
+    width: 430px;
+    margin: 10px 13px;
+    padding: 15px 10px;
+    font-family: "Playfair Display", serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(242, 237, 229);
+}
+
+#services .box3 img {
+    height: 180px;
+    width: 180px;
+    padding: 4px 10px;
+}
+
+
+/* Clients section */
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clientheading {
+    font-family: "Playfair Display", serif;
+    color: rgb(12, 12, 12);
+    font-size: 2rem;
+    padding: 20px 20px 30px;
+    text-align: center;
+}
+
+#clients .client-items1 {
+    margin: 20px 20px;
+    padding: 20px 20px;
+}
+
+#clients .client-items1 img {
+    height: 120px;
+    width: 120px;
+}
+
+#clients .client-items2 {
+    margin: 20px 20px;
+    padding: 20px 20px;
+}
+
+#clients .client-items2 img {
+    height: 120px;
+    width: 120px;
+}
+
+#clients .client-items3 {
+    margin: 20px 20px;
+    padding: 20px 20px;
+}
+
+#clients .client-items3 img {
+    height: 120px;
+    width: 120px;
+}
+
+#clients .client-items4 {
+    margin: 20px 20px;
+    padding: 20px 20px;
+}
+
+#clients .client-items4 img {
+    height: 120px;
+    width: 120px;
+}
+
+#clients-section::before {
+    content: "";
+    background: url("../WebDevImgs/bg2.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 60%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.45;
+}
+
+
+/* About section */
+
+#about-section {
+    margin: 190px 20px 40px 20px;
+    padding: 20px 20px;
+    border: 3px solid black;
+    border-radius: 30px;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    color: rgb(10, 10, 10);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#aboutheading {
+    font-family: "Playfair Display", serif;
+    color: rgb(12, 12, 12);
+    font-size: 2rem;
+    text-align: center;
+}
+
+#about #myimage img {
+    height: 180px;
+    width: 180px;
+    margin: 30px 5px 20px 20px;
+}
+
+#about #socials img {
+    height: 50px;
+    margin: 40px 40px 0px 40px;
+}
+
+#about #link a {
+    padding: 0px 55px;
+}
+
+
+/* Contact us */
+
+#contact-section {
+    margin: 0px 30px 0px 30px;
+    position: relative;
+}
+
+#contact-section::before {
+    content: "";
+    background: url("../WebDevImgs/bg3.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 20px 10px 20px;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#contactheading {
+    font-family: "Playfair Display", serif;
+    color: rgb(12, 12, 12);
+    font-size: 2rem;
+    text-align: center;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 4px;
+    font-size: 1.2rem;
+    font-family: "Playfair Display", serif;
+    border: 2px solid #757474;
+    border-radius: 10px;
+}
+
+#contact form {
+    width: 40%;
+}
+
+#contact .form {
+    margin: 0px 20px 20px 20px;
+}
+
+#contact .form button {
+    margin: 0px 155px;
+    width: 40%;
+    padding: 15px;
+    font-family: "Playfair Display", serif;
+    border: 3px solid white;
+    border-radius: 18px;
+    color: white;
+    background-color: rgb(78, 68, 147);
+    font-size: 1rem;
+}
+
+#contact .form button:hover {
+    background-color: rgb(48, 38, 117);
+    cursor: pointer;
+}
+
+
+/* Footer */
+
+.foot {
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 25px;
+}
